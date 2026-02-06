@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1766074847 source:/home/acherontas/codeblocks/divisibility_3_arm64/sum_cdi.cpp
+	"sum_cdi.h"
+
+1763035892 /home/acherontas/codeblocks/divisibility_3_arm64/sum_cdi.h
+	<iostream>
+	<string>
+	<math.h>
+	<iomanip>
+
