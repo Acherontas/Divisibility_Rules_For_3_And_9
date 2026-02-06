@@ -27,7 +27,7 @@ long long int sum_cdi::cd(long long int n){
 }
 
 
-int sum_cdi::cdis(long long int nn,int dkp){
+int sum_cdi::cdis(long long int nn,int dkp,int prx){
          cdi=0;
          isdcx=0;
          int cdl=cd(nn);
@@ -56,7 +56,7 @@ int sum_cdi::cdis(long long int nn,int dkp){
                  cdll=cdl;
                  if(dkp==1){
                     cout<<"|---> Exiting with " << cdl <<"\n";
-                    isdc[isdcx]=cdl; isdcx+=1; //
+                    //isdc[isdcx]=cdl; isdcx+=1;
                     cout<<"--------End of Sum------------\n";}
                break;
                }

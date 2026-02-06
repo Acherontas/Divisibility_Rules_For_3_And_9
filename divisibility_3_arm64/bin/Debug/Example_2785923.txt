@@ -1,0 +1,26 @@
+ur x is 2785923
+
+Initial sum = 36
+
+---------Internal Sum -----------
+|---> 9
+|---> Exiting with 9
+--------End of Sum------------
+
+
+with sum of summy ::== 9
+---------------------------For 3----------------------------
+with test 3
+returning 928641
+with928641 as 928641  and 0
+divisible by 3 @ 0.0 :: yes 
+divisible by 3 @ 0 :: yes 
+---------------------------End For 3----------------------------
+
+---------------------------For 9----------------------------
+with test 1
+returning 309547
+with309547 as 309547  and 0
+divisible by 9 @ 0.0 :: yes 
+divisible by 9 @ 0 :: yes 
+---------------------------End For 9----------------------------

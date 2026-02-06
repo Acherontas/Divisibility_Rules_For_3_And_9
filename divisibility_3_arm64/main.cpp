@@ -4,9 +4,29 @@
 #include "sum_cdi.h"
 using namespace std;
 
+
+long double x;
+
+int praxis(int nmb,int xx){
+    cout<<"using ------ " << xx << "\n";
+    long double test;
+    test=(long double)nmb/(long double)xx;
+    long double rest;
+    rest=(long double)x/(long double)xx;
+    cout<<"returning " << rest <<"\n";
+    long double fractpart,intpart;
+    fractpart=modf(rest,&intpart);
+    cout<<"with " << rest << " as " << intpart << "  and " << fractpart <<"\n";
+    if (fractpart==0.0){cout<<"divisible by " << xx << " @ 0.0 :: yes \n";}
+    if (fractpart==0){cout<<"divisible by " <<xx << " @ 0 :: yes \n";}
+    cout<<"end of using ------ " << xx << "\n";
+    return 0;
+}
+
+
 int main(int argc,char** argv)
 {
-    long double x;
+
     x=stold(argv[1]);
     int preci;
     preci=stoi(argv[2]);
@@ -16,7 +36,12 @@ int main(int argc,char** argv)
     summy=smcd->cdis(x,1);
     cout<<"\n";
     cout<<"with sum of summy ::== " << summy <<"\n";
-    cout<<"---------------------------For 3----------------------------\n";
+    cout<<smcd->isdcx <<"\n";
+    for(int i=0;i<=smcd->isdcx-1;i++){cout<<smcd->isdc[i] << " " ;praxis(smcd->isdc[i],3);}
+    cout<<"\n";
+    for(int i=0;i<=smcd->isdcx-1;i++){cout<<smcd->isdc[i] << " " ;praxis(smcd->isdc[i],9);}
+
+    /*
     long double test;
     test=(long double)summy/(long double)3;
     cout<<"with test " << test <<"\n";
@@ -40,5 +65,7 @@ int main(int argc,char** argv)
     if (fractpart==0.0){cout<<"divisible by 9 @ 0.0 :: yes \n";}
     if (fractpart==0){cout<<"divisible by 9 @ 0 :: yes \n";}
     cout<<"---------------------------End For 9----------------------------\n";
+    */
+
     return 0;
 }

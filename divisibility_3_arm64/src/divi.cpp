@@ -1,0 +1,40 @@
+#include "divi.h"
+
+divi::divi()
+{
+    //ctor
+}
+
+divi::~divi()
+{
+    //dtor
+}
+
+divi::divi(const divi& other)
+{
+    //copy ctor
+}
+
+divi& divi::operator=(const divi& rhs)
+{
+    if (this == &rhs) return *this; // handle self assignment
+    //assignment operator
+    return *this;
+}
+
+int divi::praxis(int x,int summy){
+
+long double test;
+    test=(long double)summy/(long double)x;
+    cout<<"with test " << test <<"\n";
+    long double rest;
+    rest=(long double)x/(long double)x;
+    cout<<"returning " << rest <<"\n";
+    long double fractpart,intpart;
+    fractpart=modf(rest,&intpart);
+    cout<<"with" << rest << " as " << intpart << "  and " << fractpart <<"\n";
+    if (fractpart==0.0){cout<<"divisible by " << x << "@ 0.0 :: yes \n";}
+    if (fractpart==0){cout<<"divisible by " <<x<< " @ 0 :: yes \n";}
+
+return 0;
+}
